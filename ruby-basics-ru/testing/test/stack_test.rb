@@ -5,6 +5,10 @@ require_relative '../lib/stack'
 
 class StackTest < Minitest::Test
   # BEGIN
+  def  setup
+    @stack = Stack.new
+  end
+  
   def test_push_and_pop
     @stack.push!(1)
     @stack.push!(2)
